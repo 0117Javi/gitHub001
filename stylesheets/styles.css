@@ -2,10 +2,10 @@ body {
     background-color: rgb(40, 42, 54);
 }
 
-.clock {
+ .clock {
     position: absolute;
     font-family: 'IBM Plex Mono', monospace;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(50%);
     color: rgb(238, 122, 248);
@@ -20,16 +20,17 @@ body {
     font-size: 80px;
     border: 1px solid rgba(176, 245, 85, 0.952);
     padding: 0px 5px 0px 5px;
-} 
+}  
 
-.analog {
+.analog { 
  box-sizing: border-box; 
  font-family: Gotham Rounded, sans-serif ;   
  width: 300px; 
  height: 300px; 
  /* background-color: rgb(243, 219, 245); */
  border-radius: 50%; 
- border: 2px solid rgb(245, 242, 242);
+ border: 2px solid rgb(245, 242, 242); 
+ position: relative;
 } 
 
 .analog .number {
@@ -49,6 +50,15 @@ body {
     0 0 102px #0fa,
     0 0 151px #0fa;
 } 
+
+.analog .hands{
+    position: absolute;
+    bottom: 50%;
+    left: 50%; 
+    width: 10px;
+    height: 40%; 
+    background-color: rgb(236, 128, 237);
+}
 
 .analog .number1 { --rotation: 30deg; }
 .analog .number2 { --rotation: 60deg; }
